@@ -1,0 +1,21 @@
+type Bookmark {
+    id: Int!
+    name: String
+    url: String
+    groupId: Int
+}
+
+type Group {
+    id: Int!
+    name: String
+}
+
+type Query {
+    allBookmarks: [Bookmark]
+    allGroups: [Group]
+}
+
+type Mutation {
+    addBookmark(name: String, url: String, groupId: Int): Bookmark
+    addGroup(name: String): Group
+}

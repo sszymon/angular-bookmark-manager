@@ -1,0 +1,18 @@
+query bookmarkList {
+  allBookmarks{
+    id
+    name
+    url
+    groupId
+  }
+}
+
+
+mutation addBookmark($name: String!, $url: String!, $groupId: Int!) {
+  addBookmark(name: $name, url: $url, groupId: $groupId) {
+    id
+    name
+    url
+    groupId
+  }
+}
