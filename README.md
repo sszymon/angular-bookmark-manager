@@ -1,10 +1,11 @@
 
-
 # AngularBookmarkManager
 
-Install dependencies: `npm install`
-Run API: `npm start api`
-Run frontend application: `npm start nx-apollo`
+## Bootstraping
+- Install dependencies: `npm install`
+- Run API: `npm start api`
+- Run frontend application: `npm start nx-apollo`
 
-<p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+## Result screenshot
+<img src="./app-screen.png" width="579">
 
