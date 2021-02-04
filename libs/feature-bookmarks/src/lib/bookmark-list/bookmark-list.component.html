@@ -1,9 +1,8 @@
-<h1>Bookmark list</h1>
+<h2>Bookmarks</h2>
 <ul>
     <li *ngFor="let bookmark of bookmarks$ | async">
-        {{ bookmark.name }} <br>
-        {{ bookmark.url }}<br>
-        {{ bookmark.groupId }}
-        <hr>
+            <h3>{{ bookmark.name }}</h3>
+            {{ bookmark.url }}<br>
+            Group ID: {{ bookmark.groupId }}
     </li>
 </ul>
