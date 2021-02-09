@@ -29,6 +29,9 @@
     },
     "@nrwl/angular:component": {
       "style": "scss"
+    },
+    "@schematics/angular:component": {
+      "styleext": "scss"
     }
   },
   "defaultProject": "nx-apollo",
@@ -52,7 +55,9 @@
               "apps/nx-apollo/src/favicon.ico",
               "apps/nx-apollo/src/assets"
             ],
-            "styles": ["apps/nx-apollo/src/styles.scss"],
+            "styles": [
+              "apps/nx-apollo/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -114,7 +119,9 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/nx-apollo"],
+          "outputs": [
+            "coverage/apps/nx-apollo"
+          ],
           "options": {
             "jestConfig": "apps/nx-apollo/jest.config.js",
             "passWithNoTests": true
@@ -143,7 +150,9 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/nx-apollo-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/nx-apollo-e2e/**/*.{js,ts}"
+            ]
           }
         }
       }
@@ -156,12 +165,16 @@
       "architect": {
         "build": {
           "builder": "@nrwl/node:build",
-          "outputs": ["{options.outputPath}"],
+          "outputs": [
+            "{options.outputPath}"
+          ],
           "options": {
             "outputPath": "dist/apps/api",
             "main": "apps/api/src/main.ts",
             "tsConfig": "apps/api/tsconfig.app.json",
-            "assets": ["apps/api/src/assets"]
+            "assets": [
+              "apps/api/src/assets"
+            ]
           },
           "configurations": {
             "production": {
@@ -186,12 +199,16 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/api/**/*.ts"]
+            "lintFilePatterns": [
+              "apps/api/**/*.ts"
+            ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/api"],
+          "outputs": [
+            "coverage/apps/api"
+          ],
           "options": {
             "jestConfig": "apps/api/jest.config.js",
             "passWithNoTests": true
@@ -207,7 +224,9 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["libs/api-interfaces/**/*.ts"]
+            "lintFilePatterns": [
+              "libs/api-interfaces/**/*.ts"
+            ]
           }
         }
       }
@@ -229,7 +248,9 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/data-access"],
+          "outputs": [
+            "coverage/libs/data-access"
+          ],
           "options": {
             "jestConfig": "libs/data-access/jest.config.js",
             "passWithNoTests": true
@@ -264,7 +285,9 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/feature-bookmarks"],
+          "outputs": [
+            "coverage/libs/feature-bookmarks"
+          ],
           "options": {
             "jestConfig": "libs/feature-bookmarks/jest.config.js",
             "passWithNoTests": true

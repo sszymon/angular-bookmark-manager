@@ -5,7 +5,7 @@ import { AddBookmarkGQL, BookmarkListDocument, BookmarkListQuery } from '@angula
 @Component({
   selector: 'nx-apollo-new-bookmark-form',
   templateUrl: './new-bookmark-form.component.html',
-  styleUrls: ['./new-bookmark-form.component.css']
+  styleUrls: ['./new-bookmark-form.component.scss']
 })
 export class NewBookmarkFormComponent {
   newBookmarkForm: FormGroup;

@@ -1,5 +1,5 @@
 <h2>Bookmarks</h2>
-<ul>
+<ul class="bookmark-list">
     <li *ngFor="let bookmark of bookmarks$ | async">
             <h3>{{ bookmark.name }}</h3>
             {{ bookmark.url }}<br>

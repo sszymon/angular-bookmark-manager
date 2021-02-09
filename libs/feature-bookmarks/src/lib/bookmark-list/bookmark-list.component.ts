@@ -6,7 +6,7 @@ import { map } from 'rxjs/operators';
 @Component({
   selector: 'nx-apollo-new-bookmark-list',
   templateUrl: './bookmark-list.component.html',
-  styleUrls: ['./bookmark-list.component.css']
+  styleUrls: ['./bookmark-list.component.scss']
 })
 export class BookmarkListComponent {
 

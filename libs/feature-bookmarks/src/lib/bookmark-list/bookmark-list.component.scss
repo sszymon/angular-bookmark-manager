@@ -1,0 +1,17 @@
+ul.bookmark-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        padding: .4em 1em;
+    
+        &:nth-child(2n) {
+            background-color: #efefef;
+        }
+    }
+}
+
+h3 {
+    margin: 0;
+}
